@@ -1,6 +1,18 @@
-// SnakeGame - Orig from the Web
-// Original code by N. Vitanovic
-// see his YouTube video here: https://bit.ly/29WZ5Ml
+/*
+PROGRAM NAME: HW0 - The Snake Game Cleanup
+NAME: Affiq Mohammed
+DATE LAST MODIFIED: 01/25/23
+CLASS SECTION: CS 1337.012
+PURPOSE: A simple game that uses WASD keys to control a snake on screen that can eat a piece of fruit to
+keep growing; eating more fruit increases score
+CHANGELOG: 
+01/25/23: renamed functions to more accurately describe role in code
+          added brackets to if statements and for loops
+          added first bracket of function to same line declararation to use less lines
+          added uppercase keys to switch statements as well (kept clicking caps lock and game wouldn't
+          let me turn snake in time)
+
+*/
 
 #include <iostream>
 #include <ncurses.h>
@@ -8,54 +20,57 @@ using namespace std;
 bool gameOver;
 const int width = 20;
 const int height = 20;
-int x, y, fruitX, fruitY, score;
+int x, y, fruitXPos, fruitYPos, score;
 int tailX[100], tailY[100];
 int nTail;
 enum eDirecton { STOP = 0, LEFT, RIGHT, UP, DOWN};
 eDirecton dir;
-void Setup()
-{
+
+void setupBoard(){
     gameOver = false;
     dir = STOP;
     x = width / 2;
     y = height / 2;
-    fruitX = rand() % width;
-    fruitY = rand() % height;
+    fruitXPos = rand() % width;
+    fruitYPos = rand() % height;
     score = 0;
     initscr();
     noecho();
     timeout(100);
 }
-void Draw()
-{
+
+void drawSnake(){
     system("clear"); //system("cls");
-    for (int i = 0; i < width+2; i++)
+    for (int i = 0; i < width+2; i++){
         cout << "#";
+    }
+
     cout << "\r" << endl;
  
-    for (int i = 0; i < height; i++)
-    {
-        for (int j = 0; j < width; j++)
-        {
-            if (j == 0)
+    for (int i = 0; i < height; i++){
+        for (int j = 0; j < width; j++){
+            if (j == 0){
                 cout << "#";
-            if (i == y && j == x)
-                cout << "O";
-            else if (i == fruitY && j == fruitX)
-                cout << "F";
-            else
-            {
+            }
+
+            if (i == y && j == x){
+                cout << "O"; //print snake head
+            }
+            else if (i == fruitYPos && j == fruitXPos){
+                cout << "F"; //printing fruit
+            }
+            else{
                 bool print = false;
-                for (int k = 0; k < nTail; k++)
-                {
-                    if (tailX[k] == j && tailY[k] == i)
-                    {
-                        cout << "o";
+                for (int k = 0; k < nTail; k++){
+                    if (tailX[k] == j && tailY[k] == i){
+                        cout << "o"; //printing additional bodies to snake if fruit is eaten
                         print = true;
                     }
                 }
-                if (!print)
+
+                if (!print){
                     cout << " ";
+                }
             }
                  
  
@@ -65,13 +80,16 @@ void Draw()
         cout << "\r" << endl;
     }
  
-    for (int i = 0; i < width+2; i++)
+    for (int i = 0; i < width+2; i++){
         cout << "#";
+    }
+
     cout << "\r" << endl;
     cout << "Score:" << score << "\r" << endl;
 }
-void Input()
-{
+
+void userInput(){
+    //switch case gets the specific key user inputs to move the snake
     switch (getch())
     {
     case 'a':
@@ -89,9 +107,24 @@ void Input()
     case 'x':
         gameOver = true;
         break;
+    case 'A':
+        dir = LEFT;
+        break;
+    case 'D':
+        dir = RIGHT;
+        break;
+    case 'W':
+        dir = UP;
+        break;
+    case 'S':
+        dir = DOWN;
+        break;
+    case 'X':
+        gameOver = true;
+        break;
     }
 }
-void Logic()
+void snakeLogic()
 {
     int prevX = tailX[0];
     int prevY = tailY[0];
@@ -124,32 +157,43 @@ void Logic()
     default:
         break;
     }
-    //if (x > width || x < 0 || y > height || y < 0)
-    //  gameOver = true;
-    if (x >= width) x = 0; else if (x < 0) x = width - 1;
-    if (y >= height) y = 0; else if (y < 0) y = height - 1;
+
+    if(x >= width){
+        x = 0;
+    } 
+    else if (x < 0){
+        x = width - 1;
+     }
+
+    if(y >= height){
+        y = 0;
+    }  
+    else if (y < 0){
+     y = height - 1;
+    }
  
-    for (int i = 0; i < nTail; i++)
+    for (int i = 0; i < nTail; i++){
         if (tailX[i] == x && tailY[i] == y)
             gameOver = true;
+    }
  
-    if (x == fruitX && y == fruitY)
-    {
+    if(x == fruitXPos && y == fruitYPos){
         score += 10;
-        fruitX = rand() % width;
-        fruitY = rand() % height;
+        fruitXPos = rand() % width;
+        fruitYPos = rand() % height;
         nTail++;
     }
 }
 int main()
 {
-    Setup();
-    while (!gameOver)
-    {
-        Draw();
-        Input();
-        Logic();
+    setupBoard();
+
+    while (!gameOver){
+        drawSnake();
+        userInput();
+        snakeLogic();
     }
+
     endwin();
     return 0;
 }
