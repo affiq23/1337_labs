@@ -1,7 +1,7 @@
 /*
-PROGRAM NAME: HW0 - The Snake Game Cleanup
+PROGRAM NAME: HW1 - SNAKE GAME EXTENSIONS
 NAME: Affiq Mohammed
-DATE LAST MODIFIED: 01/25/23
+DATE LAST MODIFIED: 02/5/2023
 CLASS SECTION: CS 1337.012
 PURPOSE: A simple game that uses WASD keys to control a snake on screen that can eat a piece of fruit to
 keep growing; eating more fruit increases score
@@ -25,6 +25,7 @@ int tailX[100], tailY[100];
 int nTail;
 enum eDirecton { STOP = 0, LEFT, RIGHT, UP, DOWN};
 eDirecton dir;
+
 
 void setupBoard(){
     gameOver = false;
@@ -173,8 +174,10 @@ void snakeLogic()
     }
  
     for (int i = 0; i < nTail; i++){
-        if (tailX[i] == x && tailY[i] == y)
+        if (tailX[i] == x && tailY[i] == y){
             gameOver = true;
+        }
+            
     }
  
     if(x == fruitXPos && y == fruitYPos){
@@ -186,14 +189,30 @@ void snakeLogic()
 }
 int main()
 {
-    setupBoard();
+
+    string answer;
+
+    cout << "Welcome to Snake Game! The objective is to eat the fruit pieces and avoid running into yourself.\n";
+    cout << "Would you like to play?\n";
+    cout << "Y or N" << endl;
+    cin >> answer;
+
+
+    if(answer == "Y"){
+        
+        setupBoard();
 
     while (!gameOver){
         drawSnake();
         userInput();
         snakeLogic();
     }
-
     endwin();
     return 0;
+    }
+
+    else{
+        cout << "No problem!";
+    }
+    
 }
