@@ -6,24 +6,36 @@ CLASS SECTION: CS 1337.012
 PURPOSE: A simple game that uses WASD keys to control a snake on screen that can eat a piece of fruit to
 keep growing; eating more fruit increases score
 CHANGELOG:
-01/25/23: renamed functions to more accurately describe role in code
-          added brackets to if statements and for loops
-          added first bracket of function to same line declararation to use less lines
+01/25/23: renamed functions to more accurately describe role in code;
+          added brackets to if statements and for loops;
+          added first bracket of function to same line declararation to use less lines;
           added uppercase keys to switch statements as well (kept clicking caps lock and game wouldn't
-          let me turn snake in time)
+          let me turn snake in time);
+
+02/02/23: added instructions at beginning of program to inform user how to play;
+          took functions in main and put them in their own playGame() function to call from main;
+
+02/05/23: implemented functionality so when snake runs into a wall, it quits game;
+          added feature where user can quit game by clicking "X";
+          added function checkTail() that displays at the end of the game whether or not the user lost due to running
+          into their own tail;
+          made inputs case insensitive;
+          trying to add play again feature, board resets with snake but is frozen;
+
+  
 */
 
 #include <iostream>
 #include <ncurses.h>
 using namespace std;
 bool gameOver;
-bool ranIntoTail;
+bool ranIntoTail = false;
 const int width = 20;
 const int height = 20;
 int x, y, fruitXPos, fruitYPos, score;
 int tailX[100], tailY[100];
 int nTail;
-enum eDirecton
+enum eDirection
 {
     STOP = 0,
     LEFT,
@@ -31,7 +43,7 @@ enum eDirecton
     UP,
     DOWN
 };
-eDirecton dir;
+eDirection dir;
 
 void setupBoard()
 {
@@ -206,23 +218,7 @@ void snakeLogic()
         y = width - 1;
     }
 
-    // if (x >= width)
-    // {
-    //     x = 0;
-    // }
-    // else if (x < 0)
-    // {
-    //     x = width - 1;
-    // }
 
-    // if (y >= height)
-    // {
-    //     y = 0;
-    // }
-    // else if (y < 0)
-    // {
-    //     y = height - 1;
-    // }
 
     for (int i = 0; i < nTail; i++)
     {
@@ -254,41 +250,22 @@ void snakeLogic()
 string instructions()
 {
     string answer;
-    cout << "Welcome to Snake Game! The objective is to eat the fruit pieces and avoid running into yourself.\n";
-    cout << "Would you like to play?\n";
-    cout << "Y or N" << endl;
+    cout << "Welcome to Snake Game!\nThe objective is to eat the fruit pieces and avoid running into yourself.\n";
+    cout << "Would you like to play? Y or N\n";
     cin >> answer;
     return answer;
 }
 
-bool playAgain()
-{
-    string answer;
-    cout << "Would you like to play again?\n";
-    cout << "Y or N" << endl;
-    cin >> answer;
-
-    if (answer == "Y")
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
-}
 
 // check if user lost the game because they ran into their own tail
 void checkTail()
 {
 
-    if (ranIntoTail)
-    {
-        cout << "You ran into your tail!";
+    if (ranIntoTail){
+        cout << "You ran into your tail!\n";
     }
-    else
-    {
-        cout << "You didn't run into your tail!";
+    else{
+        cout << "You didn't run into your tail!\n";
     }
 }
 
@@ -310,10 +287,25 @@ void playGame()
 int main()
 {
 
+    string choice;
+
     if (instructions() == "Y")
     { // checking if the user wants to play or not
         playGame();
         checkTail();
+    
+    if(gameOver == true){
+        cout << "Do you want to play again? Y or N\n",
+        cin >> choice;
+        if(choice == "Y"){
+            gameOver = false;
+            nTail = 0;
+            playGame();
+        }
+    }
+
+
+
     }
 
     return 0;
