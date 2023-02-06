@@ -235,8 +235,7 @@ void snakeLogic(){
 }
 
 //displays at the beginning of the program when you run for the first time
-string instructions()
-{
+string instructions(){
     string answer;
     cout << "Welcome to Snake!\nTry to eat the fruit and avoid running into your tail.\n";
     cout << "Would you like to play? Y or N\n";
