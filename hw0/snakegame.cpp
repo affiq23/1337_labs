@@ -104,14 +104,19 @@ void drawSnake()
     }
 
     cout << "\r" << endl;
-    cout << "Score:" << score << "\r" << endl;
+    cout << "Score: " << score << "\r" << endl;
+    cout << "Press 'X' to quit."
+         << "\r" << endl;
+    cout << "Press 'P' to pause."
+         << "\r" << endl;
 }
 
 // switch case gets the specific key user inputs to move the snake
 void userInput()
 {
 
-    switch (getch()){
+    switch (getch())
+    {
     case 'a': // added support for both uppercase and lowercase keyboard input
         dir = LEFT;
         break;
@@ -144,6 +149,7 @@ void userInput()
         break;
     }
 }
+
 void snakeLogic()
 {
     int prevX = tailX[0];
@@ -178,23 +184,45 @@ void snakeLogic()
         break;
     }
 
+    if ((x > width || x < 0) || (y > height || y < 0))
+    {
+        gameOver = true;
+    }
     if (x >= width)
     {
         x = 0;
+        gameOver = true;
     }
     else if (x < 0)
     {
         x = width - 1;
     }
-
-    if (y >= height)
+    if (y >= width)
     {
         y = 0;
     }
     else if (y < 0)
     {
-        y = height - 1;
+        y = width - 1;
     }
+
+    // if (x >= width)
+    // {
+    //     x = 0;
+    // }
+    // else if (x < 0)
+    // {
+    //     x = width - 1;
+    // }
+
+    // if (y >= height)
+    // {
+    //     y = 0;
+    // }
+    // else if (y < 0)
+    // {
+    //     y = height - 1;
+    // }
 
     for (int i = 0; i < nTail; i++)
     {
@@ -202,6 +230,14 @@ void snakeLogic()
         {
             gameOver = true;
             ranIntoTail = true;
+        }
+    }
+
+    for (int i = 0; i < nTail; i++)
+    {
+        if (tailX[i] == width || tailY[i] == height)
+        {
+            gameOver = true;
         }
     }
 
@@ -242,9 +278,24 @@ bool playAgain()
     }
 }
 
+// check if user lost the game because they ran into their own tail
+void checkTail()
+{
+
+    if (ranIntoTail)
+    {
+        cout << "You ran into your tail!";
+    }
+    else
+    {
+        cout << "You didn't run into your tail!";
+    }
+}
+
 // took the functions in the main function and put them in their own function so they can be called in a more efficient manner
 void playGame()
 {
+
     setupBoard();
 
     while (!gameOver)
@@ -259,19 +310,10 @@ void playGame()
 int main()
 {
 
-    bool isValid = true;
-
-    if (instructions() == "Y"){ // checking if the user wants to play or not
+    if (instructions() == "Y")
+    { // checking if the user wants to play or not
         playGame();
-
-        if (ranIntoTail)
-        {
-            cout << "You ran into your tail!";
-        }
-        else
-        {
-            cout << "You didn't run into your tail!";
-        }
+        checkTail();
     }
 
     return 0;
