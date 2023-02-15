@@ -32,12 +32,5 @@
     "**/.*/**",
     "**/.vscode",
     "**/.vscode/**"
-  ],
-  "files.associations": {
-    "ostream": "cpp",
-    "__locale": "cpp",
-    "__string": "cpp",
-    "string": "cpp",
-    "string_view": "cpp"
-  }
+  ]
 }
