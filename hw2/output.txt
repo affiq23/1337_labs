@@ -1,6 +1,16 @@
-Enter the file name: ComedyMovies-Final.txt
+Enter the file name: open.txt
 
-Nbr Rows: 18;  Nbr Cols: 18
+Oops, can't open specified input file. No such file or directory.
+The file name used was open.txt
+Enter another file name to use (or quit): file.txt
+The new file name is file.txt
+
+Oops, can't open specified input file. No such file or directory.
+The file name used was file.txt
+Enter another file name to use (or quit): ComedyMovies-Final.txt
+The new file name is ComedyMovies-Final.txt
+
+# of Rows: 18;  # of Cols: 18
 SCFRBOBROBERTSLOKL
 TNLESREKCILSYTICRL
 AOEPOBLRUAECHBUDEA
@@ -45,25 +55,26 @@ LOCALHERO found at 9, 15: (direction = SW)
 MALLRATS found at 8, 1: (direction = N)
 MANHATTAN found at 18, 9: (direction = W)
 MOONSTRUCK found at 16, 3: (direction = N)
+(direction = N)
 OHGOD found at 3, 5: (direction = SE)
 PLAZASUITE found at 12, 8: (direction = NE)
+(direction = NE)
 REPOMAN found at 1, 4: (direction = S)
 RUSHMORE found at 16, 2: (direction = N)
 SHREK found at 16, 14: (direction = NE)
 SLACKER found at 10, 18: (direction = SW)
 SLAPSHOT found at 9, 17: (direction = SW)
 SLEEPER found at 8, 17: (direction = N)
+(direction = N)
 THERUTLES found at 17, 9: (direction = E)
 TOOTSIE found at 17, 9: (direction = W)
 TRADINGPLACES found at 4, 5: (direction = SE)
 UNCLEBUCK found at 9, 9: (direction = NE)
 YESMAN found at 18, 12: (direction = W)
+(direction = W)
 RUR found at 10, 3: RUR found at 10, 5: (direction = W)
+(direction = W)
 
 Couldn't find these movies:
 HAPPY GILMORE
 MEATBALLS
-NAPOLEAN DYNAMITE
-RAISING ARIZONA
-THE BELL BOY
-Zzzzz
