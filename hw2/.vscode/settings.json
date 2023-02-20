@@ -32,5 +32,14 @@
     "**/.*/**",
     "**/.vscode",
     "**/.vscode/**"
-  ]
+  ],
+  "files.associations": {
+    "ostream": "cpp",
+    "fstream": "cpp",
+    "iostream": "cpp",
+    "regex": "cpp",
+    "vector": "cpp",
+    "sstream": "cpp"
+  },
+  "C_Cpp_Runner.useAddressSanitizer": false
 }

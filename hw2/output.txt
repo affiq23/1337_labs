@@ -1,0 +1,69 @@
+Enter the file name: ComedyMovies-Final.txt
+
+Nbr Rows: 18;  Nbr Cols: 18
+SCFRBOBROBERTSLOKL
+TNLESREKCILSYTICRL
+AOEPOBLRUAECHBUDEA
+RITOTHEYOMTOLBATPH
+LTCMWRGIFMLBEEIBEE
+LCHAIBAONILLAURGEI
+AEKNLULDDGCISLHKLN
+MLCTILLAINTAGOLHSN
+AEUDALYCUNZHSYLOSA
+CRRURDBHSAGTEOPLUS
+LOTCLULHLLBPCRAPLA
+UMSKIROPOULALPEAAK
+EHNSAHNNSTLASACCEH
+LSOORADTEHSHBKCROA
+EUOUFMEMECOHETHEER
+SRMPARTRBTAROSAASV
+SLEISTOOTHERUTLESE
+NATTAHNAMSEYSLSSMY
+
+ALLOFME found at 9, 5: (direction = NE)
+ANNIEHALL found at 9, 18: (direction = N)
+BABE found at 3, 14: (direction = SE)
+BEINGTHERE found at 3, 6: (direction = SE)
+BIG found at 4, 14: (direction = SE)
+BOBROBERTS found at 1, 5: (direction = E)
+BULLDURHAM found at 6, 6: (direction = S)
+CARS found at 15, 10: (direction = SE)
+CATBALLOU found at 2, 9: (direction = SE)
+CITYSLICKERS found at 2, 16: (direction = W)
+CLERKS found at 3, 12: (direction = SE)
+CLUELESS found at 10, 1: (direction = S)
+DUCKSOUP found at 9, 4: (direction = S)
+ELECTION found at 9, 2: (direction = N)
+FLETCH found at 1, 3: (direction = S)
+GHOSTBUSTERS found at 6, 16: (direction = SW)
+HARVEY found at 13, 18: (direction = S)
+HOLIDAY found at 3, 13: (direction = SW)
+HOTSHOTS found at 11, 8: (direction = SE)
+LEGALLYBLONDE found at 3, 7: (direction = S)
+LIARLIAR found at 7, 5: (direction = S)
+LOCALHERO found at 9, 15: (direction = SW)
+MALLRATS found at 8, 1: (direction = N)
+MANHATTAN found at 18, 9: (direction = W)
+MOONSTRUCK found at 16, 3: (direction = N)
+OHGOD found at 3, 5: (direction = SE)
+PLAZASUITE found at 12, 8: (direction = NE)
+REPOMAN found at 1, 4: (direction = S)
+RUSHMORE found at 16, 2: (direction = N)
+SHREK found at 16, 14: (direction = NE)
+SLACKER found at 10, 18: (direction = SW)
+SLAPSHOT found at 9, 17: (direction = SW)
+SLEEPER found at 8, 17: (direction = N)
+THERUTLES found at 17, 9: (direction = E)
+TOOTSIE found at 17, 9: (direction = W)
+TRADINGPLACES found at 4, 5: (direction = SE)
+UNCLEBUCK found at 9, 9: (direction = NE)
+YESMAN found at 18, 12: (direction = W)
+RUR found at 10, 3: RUR found at 10, 5: (direction = W)
+
+Couldn't find these movies:
+HAPPY GILMORE
+MEATBALLS
+NAPOLEAN DYNAMITE
+RAISING ARIZONA
+THE BELL BOY
+Zzzzz
