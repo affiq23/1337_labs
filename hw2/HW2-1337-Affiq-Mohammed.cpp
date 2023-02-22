@@ -190,7 +190,7 @@ int main(){
        for (const auto& word : words) {
         string tempString;
         for (char c : word) {
-            if (!std::isspace(c)) { // and this
+            if (!isspace(c)) { // and this
                 tempString += toupper(c);
             }
         }
