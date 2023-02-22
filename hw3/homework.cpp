@@ -49,7 +49,7 @@ int main(){
 vector <int> vectorOne = generateVector();
 
 for(int i = 0; i < vectorOne.size(); i++){
-    cout << vectorOne[i] << "| ";
+    cout << vectorOne[i] << "|| ";
 }
 
 cout << endl;
