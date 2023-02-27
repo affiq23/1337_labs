@@ -2,7 +2,6 @@
  - 2/22/23:     Started program
                 Wrote generateVector() function, which takes input from user and creates vector
                 Have to implement boundary check if largestNum is greater than 20
-
 - 2/27/23:      Wrote showVector function to display contents and vector and size
                 Created new copy of vectorOne
                 Was able to sort vectorOne (original vector) using sort algorithm and display it
