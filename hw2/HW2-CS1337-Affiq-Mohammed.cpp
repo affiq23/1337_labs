@@ -1,13 +1,18 @@
 /* CHANGELOG:
+
+2/17/23:
     -took Geeks program and tried to implement features
     -added file functionality
     -created matrix from file data
     -can display matrix
+2/18/23:
     -renamed variables to more relevant names
     -modified patternsearch and search2Darray
     -not able to print out words without spaces
     -still have to implement quit feature for file name properly
-    -wrong index appearing
+2/23/23:
+    -fixed index problem when the program reports where word was found
+    -still trying to get quit function
 
 */
 
@@ -16,7 +21,6 @@
     gives warnings, but thats's because my compiler doesn't have C++ 11 installed for range 
     based for loops 
 */
-
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -31,7 +35,7 @@ int y[] = {-1, 0, 1, -1, 1, -1, 0, 1};
 int row = 0;
 int col = 0;
 
-fstream file;
+ifstream file;
 string fileName;
 string line;
 vector<string> words;
@@ -46,7 +50,8 @@ void checkAndOpenFile(){
     cout << "\n";
     file.open(fileName.c_str());
 
-    while (file.fail()) {
+    while (file.fail())
+    {
         file.clear(); //clearing the original file value
         cout << "Oops, can't open specified input file. No such file or directory." << endl;
         cout << "The file name used was " << fileName << endl;
@@ -54,10 +59,6 @@ void checkAndOpenFile(){
         cin >> fileName;
         cout << "The new file name is " << fileName << endl;
         cout << "\n";
-
-        if(fileName == "quit"){
-            break;
-        }
         file.open(fileName.c_str());
     }
 
@@ -97,7 +98,7 @@ bool search2D(char *grid, int row, int col, string word, int R, int C, int &dire
             
         }
 
-        //checkingLen should equal length if all characters match
+        //checkingLen should equal len if all characters match
         if (checkingLen == length){
             direction = dir;
             return true;
@@ -115,7 +116,7 @@ int patternSearch(char *grid, string wordNoSpace, string wordSpace, int R, int C
         for (int col = 0; col < C; col++){
             if (search2D(grid, row, col, wordNoSpace, R, C, direction)){
                 if (direction != 0){
-                    cout << wordNoSpace << " found at " << row++ /*+1?*/<< ", " << col++<< ": "; 
+                    cout << wordNoSpace << " found at " << row++<< ", " << col++<< ": "; //get rid of 0 based index
                 }
             }
         }
@@ -134,20 +135,20 @@ int main(){
         getline(file, line);
         if (line[0] != '#' && line.length() != 0 && line.length() != 1){
 
-            stringstream s(line); //had to google
+            stringstream s(line);
             s >> row >> col;
             break;
         }
     }
-    cout << "# of Rows: " << row << ";  # of Cols: " << col << endl;
+    cout << "Nbr Rows: " << row << ";  Nbr Cols: " << col << endl;
 
     // create matrix
     char matrix[row][col];
     while (true){
         getline(file, line);
-        if ((line[0] != '#' && line.length() != 1 && line.length() != 0)){ //checking if character is not # and exists
+        if (line[0] != '#' && line.length() != 0 && line.length() != 1) { //checking if character is not # and exists
             for (int i = 0; i < row; i++) {
-                if (line[0] != '#' && line.length() != 1 && line.length() != 0){ 
+                if (line[0] != '#' && line.length() != 0 && line.length() != 1){ 
                     for (int j = 0; j < line.length(); j++){
                         matrix[i][j] = line[j];
                     }
@@ -172,14 +173,28 @@ int main(){
             words.push_back(line);
         }
     }
-    
+
+    // get rid of the empty vectors
+    for (int i = 0; i < words.size(); i++){
+        if (words[i].length() == 0) {
+            words.erase(words.begin() + i);
+        }
+    }
+
     // make a copy of words with all capital letters
     for (int i = 0; i < words.size(); i++){
         string delimiter = "\n";
         string line1 = words[i];
        for (auto& c : line1) {
-        c = toupper(static_cast<unsigned char>(c)); //also had to google
+        c = toupper(static_cast<unsigned char>(c));
     }
+
+    //removing the \n occurence
+    size_t pos = 0;
+    while ((pos = line1.find(delimiter)) != std::string::npos) {
+        line1.erase(pos, delimiter.length());
+    }
+
         uppercaseWords.push_back(line1);
     }
 
@@ -190,7 +205,7 @@ int main(){
        for (const auto& word : words) {
         string tempString;
         for (char c : word) {
-            if (!isspace(c)) { // and this
+            if (!std::isspace(c)) {
                 tempString += toupper(c);
             }
         }
@@ -202,33 +217,33 @@ int main(){
 
     // search and get directions one by one
     for (int i = 0; i < words.size(); i++){
-        int checkDir;
-        checkDir = patternSearch((char *)matrix, noSpaceWords[i], words[i], row, col, checkDir);
-        if (checkDir == 0){
+        int direction = 0;
+        direction = patternSearch((char *)matrix, noSpaceWords[i], words[i], row, col, direction);
+        if (direction == 0){
             wordsNotFound.push_back(words[i]);
         }
-        else if (checkDir == 1){
+        else if (direction == 1){
             cout << "(direction = N)" << endl;
         }
-        else if (checkDir == 2){
+        else if (direction == 2){
             cout << "(direction = NE)" << endl;
         }
-       else  if (checkDir == 3){
+       else  if (direction == 3){
             cout << "(direction = W)" << endl;
         }
-        else if (checkDir == 4){
+        else if (direction == 4){
             cout << "(direction = E)" << endl;
         }
-       else  if (checkDir == 5){
+       else  if (direction == 5){
             cout << "(direction = SW)" << endl;
         }
-       else if (checkDir == 6){
+       else if (direction == 6){
             cout << "(direction = S)" << endl;
         }
-       else  if (checkDir == 7){
+       else  if (direction == 7){
             cout << "(direction = SE)" << endl;
         }
-        else if (checkDir == 8){
+        else if (direction == 8){
             cout << "(direction = NW)" << endl;
         }
         else{
