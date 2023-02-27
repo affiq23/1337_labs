@@ -12,11 +12,13 @@
 #include <algorithm>
 using namespace std;
 
+// functionality to check if functions are working as intended
 void show(string msg)
 {
     cout << "SHOWING: " << msg << endl;
 }
 
+// function that generates new vector when called
 vector<int> generateVector()
 {
     int sizeVec;
@@ -48,6 +50,7 @@ vector<int> generateVector()
     return vecOne;
 }
 
+// function that prints contents of vector passed in to console
 void showVector(vector<int> vector, string msg)
 {
     cout << msg << endl;
@@ -60,6 +63,7 @@ void showVector(vector<int> vector, string msg)
     cout << "Vector capacity: " << vector.capacity() << endl;
 }
 
+// function that copies vector passed in into a new vector
 vector<int> copyVector(vector<int> orgVector)
 {
     vector<int> vectorTwo = orgVector;
@@ -69,12 +73,12 @@ vector<int> copyVector(vector<int> orgVector)
 int main()
 {
 
-    vector<int> vectorOne = generateVector(); //creates vector
+    vector<int> vectorOne = generateVector(); // creates vector
 
-    vector <int> vectorTwo = copyVector(vectorOne); //creates copy of original vector
+    vector <int> vectorTwo = copyVector(vectorOne); // creates copy of original vector
     showVector(vectorOne, "print vector unsorted");
     
-    sort(vectorOne.begin(), vectorOne.end());
+    sort(vectorOne.begin(), vectorOne.end()); // sorts vector
     showVector(vectorOne, "print vector sorted");
     showVector(vectorTwo, "print vector new");
 
