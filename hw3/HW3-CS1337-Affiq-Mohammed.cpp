@@ -54,6 +54,7 @@ vector<int> generateVector()
         vecOne.push_back(j);
     }
     show("Populated generateVector");
+    cout << endl;
 
     return vecOne;
 }
@@ -61,6 +62,7 @@ vector<int> generateVector()
 // function that prints contents of vector passed in to console
 void showVector(vector<int> vector, string msg)
 {
+    show("Called showVector");
     cout << msg << endl;
     for (int i = 0; i < vector.size(); i++)
     {
@@ -69,6 +71,7 @@ void showVector(vector<int> vector, string msg)
     cout << endl;
     cout << "Vector size: " << vector.size() << endl;
     cout << "Vector capacity: " << vector.capacity() << endl;
+    cout << endl;
 }
 
 // function that copies vector passed in into a new vector
@@ -88,23 +91,25 @@ int binarySearch(vector<int> vec, int size, int value)
     while (low <= high)
     {
 
-        mid = (low + high) / 2;
+        mid = (low + high) / 2; // midpoint updates every time loops runs
 
-        if (value == vec.at(mid))
+        if (value == vec.at(mid)) // if value is midpoint
         {
             return mid;
         }
-        else if (value > vec.at(mid))
+        else if (value > vec.at(mid)) // if value is greater than midpoint, the low point becomes midpoint + 1
         {
             low = mid + 1;
         }
-        else
+        else // if value is less than midpoint, the high point becomes midpoint - 1
         {
-            high = mid - 1;
+            high = mid - 1; 
         }
     }
     return -1;
 }
+
+
 
 // function that prints out if and where position of number was
 void displayBinarySearch(int position, int searchValue)
@@ -124,15 +129,15 @@ int main()
 
     int value;
     bool flag = true;
-
+    cout << endl; // ading blank line before program displays in terminal
     vector<int> vectorOne = generateVector(); // creates vector
 
     vector<int> vectorTwo = copyVector(vectorOne); // creates copy of original vector
-    // showVector(vectorOne, "print vector unsorted");
+    showVector(vectorOne, "ORIGINAL VECTOR: UNSORTED");
 
     sort(vectorOne.begin(), vectorOne.end()); // sorts vector
-    showVector(vectorOne, "print vector sorted");
-    // showVector(vectorTwo, "print vector new");
+    showVector(vectorOne, "ORIGINAL VECTOR: SORTED");
+    showVector(vectorTwo, "NEW VECTOR: UNSORTED");
     cout << endl;
 
     for (int i = 0; i < 5; i++) // looping to ask the user to check multiple numbers

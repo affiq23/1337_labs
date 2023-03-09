@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/affiq/Projects/1337_labs/hw0",
-      "program": "/Users/affiq/Projects/1337_labs/hw0/build/Debug/outDebug"
+      "cwd": "/Users/affiq/Projects/1337_labs",
+      "program": "/Users/affiq/Projects/1337_labs/build/Debug/outDebug"
     }
   ]
 }
