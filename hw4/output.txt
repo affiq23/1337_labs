@@ -1,14 +1,196 @@
-This is a test. My dog has fleas.
-Amy asked an aardvark.
-The rain in Spain stays mainly in the plains.
-How much wood would a woodchuck chuck if a woodchuck could chuck wood?
-Suzy sells seashells by the seashore.
-Becky's beagle barked and bayed, becoming bothersome for Billy.
-Can you keep the cat from clawing the couch? It's creating chaos.
-Dan's dog dove deep in the dam, drinking dirty water as he dove.
-Fred's friends fried Fritos for Friday's food.
-Greedy goats gobbled up gooseberries, getting good at grabbing the goodies.
-Rudolph the red-nosed reindeer rose rapidly into the air.
-Seven sisters slept soundly on the sand.
-In Hertford, Hereford, and Hampshire, hurricanes hardly ever happen.
-It is just a meaningless, repetitive phrase that a linguist, Professor Henry Higgins (in the movie My Fair Lady) used as a mnemonic device to help the learner ("Liza") learn the correct way to pronounce the diphthong "ai," as in "aim" and "main," rather than the Cockney pronunciation of it, which sounds like the "i" in "Rhine" and "spine."
+ORIGINAL SENTENCE: This is a test. My dog has fleas.
+NUMBER OF CHARACTERS IN SENTENCE: 33
+NUMBER OF WORDS IN SENTENCE: 8
+LONGEST WORD IN SENTENCE: fleas.
+NUMBER OF CHARACTERS
+Vowels: 8
+Consonants: 16
+Spaces: 7
+Punctuation: 2
+Other: 0
+TITLE CASE: This Is A Test. My Dog Has Fleas.
+SENTENCE CASE: This is a test. my dog has fleas.
+TOGGLE CASE: tHIS iS a tEST. mY dOG hAS fLEAS.
+
+ORIGINAL SENTENCE: Amy asked an aardvark.
+NUMBER OF CHARACTERS IN SENTENCE: 22
+NUMBER OF WORDS IN SENTENCE: 4
+LONGEST WORD IN SENTENCE: aardvark.
+NUMBER OF CHARACTERS
+Vowels: 7
+Consonants: 11
+Spaces: 3
+Punctuation: 1
+Other: 0
+TITLE CASE: Amy Asked An Aardvark.
+SENTENCE CASE: Amy asked an aardvark.
+TOGGLE CASE: aMY aSKED aN aARDVARK.
+
+ORIGINAL SENTENCE: The rain in Spain stays mainly in the plains.
+NUMBER OF CHARACTERS IN SENTENCE: 45
+NUMBER OF WORDS IN SENTENCE: 9
+LONGEST WORD IN SENTENCE: plains.
+NUMBER OF CHARACTERS
+Vowels: 13
+Consonants: 23
+Spaces: 8
+Punctuation: 1
+Other: 0
+TITLE CASE: The Rain In Spain Stays Mainly In The Plains.
+SENTENCE CASE: The rain in spain stays mainly in the plains.
+TOGGLE CASE: tHE rAIN iN sPAIN sTAYS mAINLY iN tHE pLAINS.
+
+ORIGINAL SENTENCE: How much wood would a woodchuck chuck if a woodchuck could chuck wood?
+NUMBER OF CHARACTERS IN SENTENCE: 70
+NUMBER OF WORDS IN SENTENCE: 13
+LONGEST WORD IN SENTENCE: woodchuck
+NUMBER OF CHARACTERS
+Vowels: 21
+Consonants: 36
+Spaces: 12
+Punctuation: 1
+Other: 0
+TITLE CASE: How Much Wood Would A Woodchuck Chuck If A Woodchuck Could Chuck Wood?
+SENTENCE CASE: How much wood would a woodchuck chuck if a woodchuck could chuck wood?
+TOGGLE CASE: hOW mUCH wOOD wOULD a wOODCHUCK cHUCK iF a wOODCHUCK cOULD cHUCK wOOD?
+
+ORIGINAL SENTENCE: Suzy sells seashells by the seashore.
+NUMBER OF CHARACTERS IN SENTENCE: 37
+NUMBER OF WORDS IN SENTENCE: 6
+LONGEST WORD IN SENTENCE: seashells
+NUMBER OF CHARACTERS
+Vowels: 10
+Consonants: 21
+Spaces: 5
+Punctuation: 1
+Other: 0
+TITLE CASE: Suzy Sells Seashells By The Seashore.
+SENTENCE CASE: Suzy sells seashells by the seashore.
+TOGGLE CASE: sUZY sELLS sEASHELLS bY tHE sEASHORE.
+
+ORIGINAL SENTENCE: Becky's beagle barked and bayed, becoming bothersome for Billy.
+NUMBER OF CHARACTERS IN SENTENCE: 63
+NUMBER OF WORDS IN SENTENCE: 9
+LONGEST WORD IN SENTENCE: bothersome
+NUMBER OF CHARACTERS
+Vowels: 18
+Consonants: 34
+Spaces: 8
+Punctuation: 2
+Other: 1
+TITLE CASE: Becky's Beagle Barked And Bayed, Becoming Bothersome For Billy.
+SENTENCE CASE: Becky's beagle barked and bayed, becoming bothersome for billy.
+TOGGLE CASE: bECKY'S bEAGLE bARKED aND bAYED, bECOMING bOTHERSOME fOR bILLY.
+
+ORIGINAL SENTENCE: Can you keep the cat from clawing the couch? It's creating chaos.
+NUMBER OF CHARACTERS IN SENTENCE: 65
+NUMBER OF WORDS IN SENTENCE: 12
+LONGEST WORD IN SENTENCE: creating
+NUMBER OF CHARACTERS
+Vowels: 19
+Consonants: 32
+Spaces: 11
+Punctuation: 2
+Other: 1
+TITLE CASE: Can You Keep The Cat From Clawing The Couch? It's Creating Chaos.
+SENTENCE CASE: Can you keep the cat from clawing the couch? it's creating chaos.
+TOGGLE CASE: cAN yOU kEEP tHE cAT fROM cLAWING tHE cOUCH? iT'S cREATING cHAOS.
+
+ORIGINAL SENTENCE: Dan's dog dove deep in the dam, drinking dirty water as he dove.
+NUMBER OF CHARACTERS IN SENTENCE: 64
+NUMBER OF WORDS IN SENTENCE: 13
+LONGEST WORD IN SENTENCE: drinking
+NUMBER OF CHARACTERS
+Vowels: 18
+Consonants: 31
+Spaces: 12
+Punctuation: 2
+Other: 1
+TITLE CASE: Dan's Dog Dove Deep In The Dam, Drinking Dirty Water As He Dove.
+SENTENCE CASE: Dan's dog dove deep in the dam, drinking dirty water as he dove.
+TOGGLE CASE: dAN'S dOG dOVE dEEP iN tHE dAM, dRINKING dIRTY wATER aS hE dOVE.
+
+ORIGINAL SENTENCE: Fred's friends fried Fritos for Friday's food.
+NUMBER OF CHARACTERS IN SENTENCE: 46
+NUMBER OF WORDS IN SENTENCE: 7
+LONGEST WORD IN SENTENCE: Friday's
+NUMBER OF CHARACTERS
+Vowels: 12
+Consonants: 25
+Spaces: 6
+Punctuation: 1
+Other: 2
+TITLE CASE: Fred's Friends Fried Fritos For Friday's Food.
+SENTENCE CASE: Fred's friends fried fritos for friday's food.
+TOGGLE CASE: fRED'S fRIENDS fRIED fRITOS fOR fRIDAY'S fOOD.
+
+ORIGINAL SENTENCE: Greedy goats gobbled up gooseberries, getting good at grabbing the goodies.
+NUMBER OF CHARACTERS IN SENTENCE: 75
+NUMBER OF WORDS IN SENTENCE: 11
+LONGEST WORD IN SENTENCE: gooseberries,
+NUMBER OF CHARACTERS
+Vowels: 25
+Consonants: 38
+Spaces: 10
+Punctuation: 2
+Other: 0
+TITLE CASE: Greedy Goats Gobbled Up Gooseberries, Getting Good At Grabbing The Goodies.
+SENTENCE CASE: Greedy goats gobbled up gooseberries, getting good at grabbing the goodies.
+TOGGLE CASE: gREEDY gOATS gOBBLED uP gOOSEBERRIES, gETTING gOOD aT gRABBING tHE gOODIES.
+
+ORIGINAL SENTENCE: Rudolph the red-nosed reindeer rose rapidly into the air.
+NUMBER OF CHARACTERS IN SENTENCE: 57
+NUMBER OF WORDS IN SENTENCE: 9
+LONGEST WORD IN SENTENCE: red-nosed
+NUMBER OF CHARACTERS
+Vowels: 19
+Consonants: 28
+Spaces: 8
+Punctuation: 1
+Other: 1
+TITLE CASE: Rudolph The Red-nosed Reindeer Rose Rapidly Into The Air.
+SENTENCE CASE: Rudolph the red-nosed reindeer rose rapidly into the air.
+TOGGLE CASE: rUDOLPH tHE rED-NOSED rEINDEER rOSE rAPIDLY iNTO tHE aIR.
+
+ORIGINAL SENTENCE: Seven sisters slept soundly on the sand.
+NUMBER OF CHARACTERS IN SENTENCE: 40
+NUMBER OF WORDS IN SENTENCE: 7
+LONGEST WORD IN SENTENCE: sisters
+NUMBER OF CHARACTERS
+Vowels: 10
+Consonants: 23
+Spaces: 6
+Punctuation: 1
+Other: 0
+TITLE CASE: Seven Sisters Slept Soundly On The Sand.
+SENTENCE CASE: Seven sisters slept soundly on the sand.
+TOGGLE CASE: sEVEN sISTERS sLEPT sOUNDLY oN tHE sAND.
+
+ORIGINAL SENTENCE: In Hertford, Hereford, and Hampshire, hurricanes hardly ever happen.
+NUMBER OF CHARACTERS IN SENTENCE: 68
+NUMBER OF WORDS IN SENTENCE: 9
+LONGEST WORD IN SENTENCE: Hampshire,
+NUMBER OF CHARACTERS
+Vowels: 19
+Consonants: 37
+Spaces: 8
+Punctuation: 4
+Other: 0
+TITLE CASE: In Hertford, Hereford, And Hampshire, Hurricanes Hardly Ever Happen.
+SENTENCE CASE: In hertford, hereford, and hampshire, hurricanes hardly ever happen.
+TOGGLE CASE: iN hERTFORD, hEREFORD, aND hAMPSHIRE, hURRICANES hARDLY eVER hAPPEN.
+
+ORIGINAL SENTENCE: It is just a meaningless, repetitive phrase that a linguist, Professor Henry Higgins (in the movie My Fair Lady) used as a mnemonic device to help the learner ("Liza") learn the correct way to pronounce the diphthong "ai," as in "aim" and "main," rather than the Cockney pronunciation of it, which sounds like the "i" in "Rhine" and "spine."
+NUMBER OF CHARACTERS IN SENTENCE: 341
+NUMBER OF WORDS IN SENTENCE: 59
+LONGEST WORD IN SENTENCE: pronunciation
+NUMBER OF CHARACTERS
+Vowels: 102
+Consonants: 157
+Spaces: 58
+Punctuation: 6
+Other: 18
+TITLE CASE: It Is Just A Meaningless, Repetitive Phrase That A Linguist, Professor Henry Higgins (in The Movie My Fair Lady) Used As A Mnemonic Device To Help The Learner ("liza") Learn The Correct Way To Pronounce The Diphthong "ai," As In "aim" And "main," Rather Than The Cockney Pronunciation Of It, Which Sounds Like The "i" In "rhine" And "spine."
+SENTENCE CASE: It is just a meaningless, repetitive phrase that a linguist, professor henry higgins (in the movie my fair lady) used as a mnemonic device to help the learner ("liza") learn the correct way to pronounce the diphthong "ai," as in "aim" and "main," rather than the cockney pronunciation of it, which sounds like the "i" in "rhine" and "spine."
+TOGGLE CASE: iT iS jUST a mEANINGLESS, rEPETITIVE pHRASE tHAT a lINGUIST, pROFESSOR hENRY hIGGINS (IN tHE mOVIE mY fAIR lADY) uSED aS a mNEMONIC dEVICE tO hELP tHE lEARNER ("LIZA") lEARN tHE cORRECT wAY tO pRONOUNCE tHE dIPHTHONG "AI," aS iN "AIM" aND "MAIN," rATHER tHAN tHE cOCKNEY pRONUNCIATION oF iT, wHICH sOUNDS lIKE tHE "I" iN "RHINE" aND "SPINE."
+
