@@ -3,6 +3,7 @@
 */
 
 #include <iostream>
+#include <vector>
 using namespace std;
 
 void messingWith2DArray(bool ifTrue)
@@ -58,11 +59,19 @@ void summingRows(bool ifTrue)
     }
 }
 
+
+
 int main()
 {
 
-    messingWith2DArray(false);
-    summingRows(true);
 
+    //messingWith2DArray(false);
+    //summingRows(false);
+
+    int x = 10;
+    if(x = 5){
+        x++;
+    }
+    cout << x << endl;
     return 0;
 }
