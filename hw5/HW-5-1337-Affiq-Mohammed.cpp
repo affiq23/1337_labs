@@ -21,10 +21,6 @@
     4/2/23 - fixed bug where it was calling question: curNode was pointing to guess and setting it equal to question
 
     SPECIAL FEATURES: set bool check to true if you want to turn on debugging statements
-              
-
-
-
 */
 
 #include <iostream>
@@ -61,13 +57,12 @@ void playGame(animalNode *curNode) // passes in root node as current node first 
     if (curNode->question == "")
     {
         debug("question is empty", check);
-
         cout << "Is it a(n) " << curNode->guess << "? (yes/no)" << endl;
         string answer;
         cin >> answer;
         if (answer == "yes") // program guesses correctly and game is over
         {
-            cout << "Yay, I got it right!" << endl;
+            cout << "I win!" << endl;
             return;
         }
         else if (answer == "no")
@@ -92,6 +87,7 @@ void playGame(animalNode *curNode) // passes in root node as current node first 
             cout << "For a(n) " << newAnimal->guess << ", would the answer be yes or no?" << endl;
             string newAnswer;
             cin >> newAnswer;
+
             if (newAnswer == "yes") // if answer is yes
             {
                 debug("newAnswer was yes", check);
@@ -110,7 +106,7 @@ void playGame(animalNode *curNode) // passes in root node as current node first 
                 {
                     curNode->yesAnswer = newAnimal;
                     curNode->noAnswer = new animalNode; // creates new node for noAnswer
-                    curNode->noAnswer->guess = curNode->guess;
+                    curNode->noAnswer->guess = curNode->guess; //sets noAnswer guess equal to current guess
                     curNode->noAnswer->yesAnswer = nullptr;
                     curNode->noAnswer->noAnswer = nullptr;
                     curNode->noAnswer->question = "";
@@ -123,7 +119,7 @@ void playGame(animalNode *curNode) // passes in root node as current node first 
                 // if current node's noAnswer is not null and noAnswer's question is equal to the question pointed to by current node
                 {
                     debug("curNode is not pointing to null, and curNode's noAnswer is pointing to question, which is the same as curNode question", check);
-                    curNode->noAnswer->guess = newAnimal->guess;
+                    curNode->noAnswer->guess = newAnimal->guess; // updates noAnswer guess to be newAnimal guess
                     debug("curNode's noAnswer is pointing to guess, which is same as newAnimal's guess", check);
                     delete newAnimal;
                     debug("newAnimal is deleted", check);
@@ -133,8 +129,8 @@ void playGame(animalNode *curNode) // passes in root node as current node first 
                 else
                 {
                     curNode->noAnswer = newAnimal;
-                    curNode->yesAnswer = new animalNode;
-                    curNode->yesAnswer->guess = curNode->guess;
+                    curNode->yesAnswer = new animalNode; // creates new node for yesAnswer
+                    curNode->yesAnswer->guess = curNode->guess; //sets yesAnswer guess equal to current guess
                     curNode->yesAnswer->yesAnswer = nullptr;
                     curNode->yesAnswer->noAnswer = nullptr;
                     curNode->yesAnswer->question = "";
@@ -166,6 +162,8 @@ void playGame(animalNode *curNode) // passes in root node as current node first 
 
 int main()
 {
+    string answer; // to indicate whether user wants to keep playing
+
     // creates root node to start binary tree
     animalNode *rootNode = new animalNode;
     rootNode->question = "";
@@ -173,15 +171,14 @@ int main()
     rootNode->yesAnswer = nullptr;
     rootNode->noAnswer = nullptr;
     cout << "Let's play an Animal Guessing Game!" << endl;
-    cout << "Think of an animal and click enter when ready." << endl;
-    cin.ignore(); // ignores enter click
+    cout << "Think of an animal and click return when ready." << endl;
+    cin.ignore(); // ignores key click
 
     // while loop to keep playing game
     while (true)
     {
         playGame(rootNode);
         cout << "Do you want to play again? (yes/no)" << endl;
-        string answer;
         cin >> answer;
         if (answer == "no")
         {
