@@ -1,0 +1,95 @@
+Let's play an Animal Guessing Game!
+Think of an animal and click return when ready.
+  
+Is it a(n) lizard? (yes/no)
+no
+Bummer!
+What animal were you thinking of?
+bear
+What's a yes/no question to identify a(n) lizard from a(n) bear:
+Does it eat fish?
+For a(n) bear, would the answer be yes or no?
+yes
+Thanks for teaching me about a(n) bear!
+Do you want to play again? (yes/no)
+yes
+Does it eat fish? (yes/no)
+no
+Is it a(n) lizard? (yes/no)
+no
+Bummer!
+What animal were you thinking of?
+snake
+What's a yes/no question to identify a(n) lizard from a(n) snake:
+Does it slither?
+For a(n) snake, would the answer be yes or no?
+yes
+Thanks for teaching me about a(n) snake!
+Do you want to play again? (yes/no)
+yes
+Does it eat fish? (yes/no)
+no
+Does it slither? (yes/no)
+yes
+Is it a(n) snake? (yes/no)
+yes
+I win!
+Do you want to play again? (yes/no)
+yes
+Does it eat fish? (yes/no)
+no
+Does it slither? (yes/no)
+no
+Is it a(n) lizard? (yes/no)
+no
+Bummer!
+What animal were you thinking of?
+giraffe
+What's a yes/no question to identify a(n) lizard from a(n) giraffe:
+Does it have a long neck?
+For a(n) giraffe, would the answer be yes or no?
+yes
+Thanks for teaching me about a(n) giraffe!
+Do you want to play again? (yes/no)
+yes
+Does it eat fish? (yes/no)
+no
+Does it slither? (yes/no)
+no
+Does it have a long neck? (yes/no)
+no
+Is it a(n) lizard? (yes/no)
+no
+Bummer!
+What animal were you thinking of?
+monkey
+What's a yes/no question to identify a(n) lizard from a(n) monkey:
+Does it eat bananas?
+For a(n) monkey, would the answer be yes or no?
+yes
+Thanks for teaching me about a(n) monkey!
+Do you want to play again? (yes/no)
+yes
+Does it eat fish? (yes/no)
+no
+Does it slither? (yes/no)
+no
+Does it have a long neck? (yes/no)
+yes
+Is it a(n) giraffe? (yes/no)
+yes
+I win!
+Do you want to play again? (yes/no)
+yes
+Does it eat fish? (yes/no)
+no
+Does it slither? (yes/no)
+no
+Does it have a long neck? (yes/no)
+no
+Does it eat bananas? (yes/no)
+yes
+Is it a(n) monkey? (yes/no)
+yes
+I win!
+Do you want to play again? (yes/no)

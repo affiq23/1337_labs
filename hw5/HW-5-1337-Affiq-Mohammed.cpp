@@ -152,7 +152,7 @@ void playGame(animalNode *curNode) // passes in root node as current node first 
             debug("answer was yes, curNode pointing to yes", check);
             playGame(curNode->yesAnswer);
         }
-        else if (answer == "no")
+        else if (answer == "no") // new comment
         {
             debug("answer was no, curNode pointing to no", check);
             playGame(curNode->noAnswer);
