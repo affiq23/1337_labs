@@ -1,0 +1,27 @@
+Total Animals created:14,Total cats created:8,Total dogs created:4
+Name: Morris, Age: 9, Weight: 3, Breed: , Color: yellow, Health: good, Sound: Moan
+Name: Mittens, Age: 1, Weight: 1, Breed: Calico, Color: brown and white, Health: good, Sound: Mew
+Name: Junior, Age: 1, Weight: 2, Breed: Tabby, Color: black, Health: , Sound: 
+Name: Priss, Age: , Weight: , Breed: , Color: white, Health: good, Sound: Mew
+Name: , Age: , Weight: , Breed: Mynah, Color: black, Health: , Sound: Hello
+Name: Charcoal, Age: 1, Weight: 2, Breed: Siamese, Color: white and yellow, Health: good, Sound: Hiss
+Name: Bitsy, Age: 4, Weight: 6, Breed: Minx, Color: grey, Health: good, Sound: 
+Name: Charmin, Age: , Weight: 3, Breed: , Color: white, Health: parvo, Sound: 
+Name: Chippy, Age: , Weight: 1, Breed: , Color: tan, Health: , Sound: 
+Name: Fido, Age: 5, Weight: 7, Breed: , Color: spotted, Health: good, Sound: Bark
+Name: Red, Age: 2, Weight: , Breed: Heinz, Color: redddish, Health: parvo, Sound: 
+Name: Cute Stuff, Age: 1, Weight: 2, Breed: , Color: yellow, Health: good, Sound: Purr
+Name: Rex, Age: 3, Weight: 5, Breed: , Color: brown and white, Health: good, Sound: 
+Name: Spot, Age: , Weight: 8, Breed: Dalmation, Color: spotted, Health: , Sound: Woof
+Name:Morris,Age:9,Weight:3,Breed:,Color:yellow,Health:good,Sound:Moan
+Name:Mittens,Age:1,Weight:1,Breed:Calico,Color:brown and white,Health:good,Sound:Mew
+Name:Junior,Age:1,Weight:2,Breed:Tabby,Color:black,Health:,Sound:
+Name:Priss,Age:,Weight:,Breed:,Color:white,Health:good,Sound:Mew
+Name:Charcoal,Age:1,Weight:2,Breed:Siamese,Color:white and yellow,Health:good,Sound:Hiss
+Name:Charmin,Age:,Weight:3,Breed:,Color:white,Health:parvo,Sound:
+Name:Red,Age:2,Weight:,Breed:Heinz,Color:redddish,Health:parvo,Sound:
+Name:Cute Stuff,Age:1,Weight:2,Breed:,Color:yellow,Health:good,Sound:Purr
+Name:Bitsy,Age:4,Weight:6,Breed:Minx,Color:grey,Health:good,Sound:
+Name:Fido,Age:5,Weight:7,Breed:,Color:spotted,Health:good,Sound:Bark
+Name:Rex,Age:3,Weight:5,Breed:,Color:brown and white,Health:good,Sound:
+Name:Spot,Age:,Weight:8,Breed:Dalmation,Color:spotted,Health:,Sound:Woof
