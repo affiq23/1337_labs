@@ -1,129 +1,194 @@
+/*
+    NAME: AFFIQ MOHAMMED
+    DATE CREATED: 4/27/23
+    NAME OF PROGRAM: HW6-CS1337-Affiq-Mohammed
+    CHANGELOG:
+
+    4/27/23 - started program, created Animal, Cat, Dog header files; included file guards since program is using multiple header files;
+              wrote introduction methods for each object type; not sure how to read in csv data
+    4/29/23 - started on writing main method and reading in data; tried to use substring but was too complicated, so switched to stringstream;
+
+
+*/
+
 #include <iostream>
 #include <fstream>
 #include <string>
 #include <vector>
-#include "Dog.h"
-#include "Cat.h"
+#include <sstream>
 #include "Animal.h"
+#include "Cat.h"
+#include "Dog.h"
 #include "Animal.cpp"
-#include "Dog.cpp"
 #include "Cat.cpp"
-
-
+#include "Dog.cpp"
 using namespace std;
 
-int Dog::NoOfDogCounts = 0;
-int Cat::NoOfCatCounts = 0;
-int main()
+
+bool fileOpened = true;
+vector<Animal *> animals;
+vector<Cat *> cats;
+vector<Dog *> dogs;
+ifstream inputFile;
+ofstream outputFile;
+
+// to parse text from CSV file and add data to member variables of objects
+void readInputData(string file)
 {
-   ifstream datafile;
-   ofstream report;
-   string line;
-   string temp;
-   string name;
-   string atype;
-   string age;
-   string weight;
-   string color;
-   string sound;
-   string health;
-   string breed;
 
-   vector<Animal *> animals;
-   vector<Dog *> dogs;
-   vector<Cat *> cats;
+    inputFile.open(file);
+    if (!inputFile)
+    {
+        fileOpened = false; // checking if file is open properly
+    }
+    string line = "";
 
-   datafile.open("animalFile.csv");
-   if (!datafile)
-   {
-       cout << "Error in file readig" << endl;
-       return 0;
-   }
-   getline(datafile, line); // skip header line
-   getline(datafile, line); // Get the frist line from the file, if any.
-   while (datafile) { // Continue if the line was sucessfully read.
-       // Process the line.
-       atype = line.substr(0, line.find(','));
-       line = line.erase(0, line.find(',') + 1);
-       name = line.substr(0, line.find(','));
-       line = line.erase(0, line.find(',') + 1);
-       age = line.substr(0, line.find(','));
-       line = line.erase(0, line.find(',') + 1);
-       weight = line.substr(0, line.find(','));
-       line = line.erase(0, line.find(',') + 1);
-       breed = line.substr(0, line.find(','));
-       line = line.erase(0, line.find(',') + 1);
-       color = line.substr(0, line.find(','));
-       line = line.erase(0, line.find(',') + 1);
-       health = line.substr(0, line.find(','));
-       sound = line.erase(0, line.find(',') + 1);
-       Animal * obj;
-       if (atype == "cat")
-       {
-           obj = new Cat();
-       }
-       else if (atype == "dog")
-       {
-           obj = new Dog();
-       }
-       else
-       {
-           obj = new Animal();
-       }
-       obj->Age = age;
-       obj->Breed = breed;
-       obj->Color = color;
-       obj->Health = health;
-       obj->Name = name;
-       obj->Sound = sound;
-       obj->Type = atype;
-       obj->Weight = weight;
+    getline(inputFile, line); // skips first line
+    while (getline(inputFile, line))
+    {
+        string fileType;
+        string fileName;
+        string fileAge;
+        string fileWeight;
+        string fileBreed;
+        string fileColor;
+        string fileHealth;
+        string fileSound;
+        string temp;
 
-       animals.push_back(obj);
-       if (atype == "cat")
-       {
-           cats.push_back((Cat *)obj);
-       }
-       else if (atype == "dog")
-       {
-           dogs.push_back((Dog *)obj);
-       }
-       getline(datafile, line);
-   }
-   // print report
-   report.open("report.txt");
-   if (report)
-   {
-       cout << "Total Animals created:" << animals.size() << ", Total cats created:" << cats.size() << ",Total dogs created:" << dogs.size() << endl;
-       report << "Total Animals created:" << animals.size() << ",Total cats created:" << cats.size() << ",Total dogs created:" << dogs.size() << endl;
-       cout << "Animals" << endl;
-       for (int i = 0; i < animals.size();i++)
-       {
-           cout << animals[i]->speak() << endl;
-           report << animals[i]->speak() << endl;
-       }
-       cout << "Cats" << endl;
-       for (int i = 0; i < cats.size();i++)
-       {
-           cout << "Name:" + cats[i]->Name + ",Age:" + cats[i]->Age + ",Weight:" + cats[i]->Weight + ",Breed:" +
-               cats[i]->Breed + ",Color:" + cats[i]->Color + ",Health:" + cats[i]->Health + ",Sound:" + cats[i]->Sound << endl;
-           report << "Name:" + cats[i]->Name + ",Age:" + cats[i]->Age + ",Weight:" + cats[i]->Weight + ",Breed:" + cats[i]->Breed
-               + ",Color:" + cats[i]->Color + ",Health:" + cats[i]->Health + ",Sound:" + cats[i]->Sound << endl;
-          
-       }
-       cout << "Dogs" << endl;
-       for (int i = 0; i < dogs.size();i++)
-       {
-           cout << "Name:" + dogs[i]->Name + ",Age:" + dogs[i]->Age + ",Weight:" + dogs[i]->Weight + ",Breed:" +
-               dogs[i]->Breed + ",Color:" + dogs[i]->Color + ",Health:" + dogs[i]->Health + ",Sound:" + dogs[i]->Sound << endl;
-           report << "Name:" + dogs[i]->Name + ",Age:" + dogs[i]->Age + ",Weight:" + dogs[i]->Weight + ",Breed:" + dogs[i]->Breed
-               + ",Color:" + dogs[i]->Color + ",Health:" + dogs[i]->Health + ",Sound:" + dogs[i]->Sound << endl;
-       }
-       report.close();
-   }
+        stringstream inputString(line); // to read the line
 
-   datafile.close();
-   return 0;
+        getline(inputString, fileType, ',');
+        getline(inputString, fileName, ',');
+        getline(inputString, fileAge, ',');
+        getline(inputString, fileWeight, ',');
+        getline(inputString, fileBreed, ',');
+        getline(inputString, fileColor, ',');
+        getline(inputString, fileHealth, ',');
+        getline(inputString, fileSound, ',');
+
+        Animal *newAnimal;
+        if (fileType == "cat")
+        {
+            newAnimal = new Cat();
+        }
+        else if (fileType == "dog")
+        {
+            newAnimal = new Dog();
+        }
+        else
+        {
+            newAnimal = new Animal();
+        }
+
+        // checking if data values from file are empty; setting them to UNKNOWN for cohesiveness
+        if (fileName.empty())
+        {
+            fileName = "UNKNOWN";
+        }
+        if (fileAge.empty())
+        {
+            fileAge = "UNKNOWN";
+        }
+        if (fileWeight.empty())
+        {
+            fileWeight = "UNKNOWN";
+        }
+        if (fileBreed.empty())
+        {
+            fileBreed = "UNKNOWN";
+        }
+        if (fileColor.empty())
+        {
+            fileColor = "UNKNOWN";
+        }
+        if (fileHealth.empty())
+        {
+            fileHealth = "UNKNOWN";
+        }
+        if (fileSound.empty())
+        {
+            fileSound = "UNKNOWN";
+        }
+
+        transform(fileName.begin(), fileName.end(), fileName.begin(), ::toupper);
+        transform(fileBreed.begin(), fileBreed.end(), fileBreed.begin(), ::toupper);
+        transform(fileColor.begin(), fileColor.end(), fileColor.begin(), ::toupper);
+        transform(fileHealth.begin(), fileHealth.end(), fileHealth.begin(), ::toupper);
+        transform(fileSound.begin(), fileSound.end(), fileSound.begin(), ::toupper);
+
+        newAnimal->name = fileName;
+        newAnimal->age = fileAge;
+        newAnimal->weight = fileWeight;
+        newAnimal->breed = fileBreed;
+        newAnimal->color = fileColor;
+        newAnimal->health = fileHealth;
+        newAnimal->sound = fileSound;
+
+        animals.push_back(newAnimal);
+        if (fileType == "cat")
+        {
+            cats.push_back((Cat *)newAnimal);
+        }
+        if (fileType == "dog")
+        {
+            dogs.push_back((Dog *)newAnimal);
+        }
+
+        line = " ";
+    }
+    inputFile.close();
 }
 
-    
+void reportToFile()
+{
+
+   // int animalNum = Animal::myAnimalNumber;
+    //int catNum = Cat::myCatNumber;
+    //int dogNum = Dog::myDogNumber;
+
+    outputFile.open("outputFile.txt");
+    if (outputFile)
+    {
+
+       // outputFile << "REPORT 1 - TOTAL ANIMALS: " << Animal::myAnimalNumber << " | TOTAL CATS: " << Cat::myCatNumber << " | TOTAL DOGS: " << Dog::myDogNumber << endl;
+        outputFile << endl;
+
+        outputFile << "REPORT 2 - ANIMAL REPORT: " << endl;
+        for (int i = 0; i < animals.size(); i++)
+        {
+            outputFile << animals[i]->Animal::introduction() << endl;
+        }
+        outputFile << endl;
+
+        outputFile << "REPORT 3 - CAT REPORT: " << endl;
+        for (int i = 0; i < cats.size(); i++)
+        {
+            outputFile << cats[i]->Cat::introduction() << endl;
+        }
+        outputFile << endl;
+
+        outputFile << "REPORT 4 - DOG REPORT: " << endl;
+        for (int i = 0; i < dogs.size(); i++)
+        {
+            outputFile << dogs[i]->Dog::introduction() << endl;
+        }
+        outputFile.close();
+    }
+}
+
+int main()
+{
+
+    readInputData("animalFile.csv");
+
+    if (fileOpened)
+    {
+        reportToFile();
+    }
+    else
+    {
+        cout << "File could not be opened. Please try again." << endl;
+    }
+    return 0;
+}

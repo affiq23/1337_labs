@@ -1,14 +1,14 @@
-#ifndef DOG_H
+#ifndef DOG_H // file guards to make sure header file is only used once
 #define DOG_H
+#include <iostream>
 #include "Animal.h"
 
 class Dog : public Animal
 {
-public:
-   Dog();
-   ~Dog();
-   int MyDogNumber;
-   static int NoOfDogCounts;
-   string speak();
+    public:
+        Dog(); // constructor
+        string introduction();
+        ~Dog(); //destructor
+
 };
 #endif
