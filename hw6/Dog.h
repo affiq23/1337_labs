@@ -5,10 +5,12 @@
 
 class Dog : public Animal
 {
-    public:
-        Dog(); // constructor
-        string introduction();
-        ~Dog(); //destructor
 
+public:
+    Dog(); // constructor
+    int initialDogNum;
+    static int numDogs;
+    string introduction();
+    ~Dog(); // destructor
 };
 #endif

@@ -5,12 +5,11 @@
 
 class Cat : public Animal
 {
-    public:
-        Cat(); // constructor
-       // int nbrCats; 
-       // static int myCatNumber; 
-        string introduction();
-        ~Cat(); //destructor
-
+public:
+    Cat(); // constructor
+    int initialCatNum;
+    static int numCats;
+    string introduction();
+    ~Cat(); // destructor
 };
 #endif

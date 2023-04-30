@@ -1,33 +1,33 @@
-REPORT 1 - TOTAL ANIMALS: 2 | TOTAL CATS: 2 | TOTAL DOGS: 2
+REPORT 1 - TOTAL ANIMALS: 14 | TOTAL CATS: 8 | TOTAL DOGS: 4 | OTHER ANIMALS: 2
 
 REPORT 2 - ANIMAL REPORT: 
-My name is MORRIS. I'm 9 years old. I weigh 3 pounds. My breed is UNKNOWN. My color is YELLOW. I'm in GOOD health , and I make a MOAN sound!
-My name is MITTENS. I'm 1 years old. I weigh 1 pounds. My breed is CALICO. My color is BROWN AND WHITE. I'm in GOOD health , and I make a MEW sound!
-My name is JUNIOR. I'm 1 years old. I weigh 2 pounds. My breed is TABBY. My color is BLACK. I'm in UNKNOWN health , and I make a  sound!
-My name is PRISS. I'm UNKNOWN years old. I weigh UNKNOWN pounds. My breed is UNKNOWN. My color is WHITE. I'm in GOOD health , and I make a MEW sound!
-My name is UNKNOWN. I'm UNKNOWN years old. I weigh UNKNOWN pounds. My breed is MYNAH. My color is BLACK. I'm in UNKNOWN health , and I make a HELLO sound!
-My name is CHARCOAL. I'm 1 years old. I weigh 2 pounds. My breed is SIAMESE. My color is WHITE AND YELLOW. I'm in GOOD health , and I make a HISS sound!
-My name is BITSY. I'm 4 years old. I weigh 6 pounds. My breed is MINX. My color is GREY. I'm in GOOD health , and I make a  sound!
-My name is CHARMIN. I'm UNKNOWN years old. I weigh 3 pounds. My breed is UNKNOWN. My color is WHITE. I'm in PARVO health , and I make a  sound!
-My name is CHIPPY. I'm UNKNOWN years old. I weigh 1 pounds. My breed is UNKNOWN. My color is TAN. I'm in UNKNOWN health , and I make a  sound!
-My name is FIDO. I'm 5 years old. I weigh 7 pounds. My breed is UNKNOWN. My color is SPOTTED. I'm in GOOD health , and I make a BARK sound!
-My name is RED. I'm 2 years old. I weigh UNKNOWN pounds. My breed is HEINZ. My color is REDDDISH. I'm in PARVO health , and I make a  sound!
-My name is CUTE STUFF. I'm 1 years old. I weigh 2 pounds. My breed is UNKNOWN. My color is YELLOW. I'm in GOOD health , and I make a PURR sound!
-My name is REX. I'm 3 years old. I weigh 5 pounds. My breed is UNKNOWN. My color is BROWN AND WHITE. I'm in GOOD health , and I make a  sound!
-My name is SPOT. I'm UNKNOWN years old. I weigh 8 pounds. My breed is DALMATION. My color is SPOTTED. I'm in UNKNOWN health , and I make a WOOF sound!
+I'm an animal! Name: MORRIS | Age: 9 | Weight: 3 | Breed: Catr unknown | Color: YELLOW | Health: GOOD | Sound: MOAN
+I'm an animal! Name: MITTENS | Age: 1 | Weight: 1 | Breed: CALICO | Color: BROWN AND WHITE | Health: GOOD | Sound: MEW
+I'm an animal! Name: JUNIOR | Age: 1 | Weight: 2 | Breed: TABBY | Color: BLACK | Health: UNKNOWN | Sound: 
+I'm an animal! Name: PRISS | Age: UNKNOWN | Weight: UNKNOWN | Breed: Catr unknown | Color: WHITE | Health: GOOD | Sound: MEW
+I'm an animal! Name: UNKNOWN | Age: UNKNOWN | Weight: UNKNOWN | Breed: MYNAH | Color: BLACK | Health: UNKNOWN | Sound: HELLO
+I'm an animal! Name: CHARCOAL | Age: 1 | Weight: 2 | Breed: SIAMESE | Color: WHITE AND YELLOW | Health: GOOD | Sound: HISS
+I'm an animal! Name: BITSY | Age: 4 | Weight: 6 | Breed: MINX | Color: GREY | Health: GOOD | Sound: 
+I'm an animal! Name: CHARMIN | Age: UNKNOWN | Weight: 3 | Breed: Catr unknown | Color: WHITE | Health: PARVO | Sound: 
+I'm an animal! Name: CHIPPY | Age: UNKNOWN | Weight: 1 | Breed: UNKNOWN | Color: TAN | Health: UNKNOWN | Sound: 
+I'm an animal! Name: FIDO | Age: 5 | Weight: 7 | Breed: UNKNOWN | Color: SPOTTED | Health: GOOD | Sound: BARK
+I'm an animal! Name: RED | Age: 2 | Weight: UNKNOWN | Breed: HEINZ | Color: REDDDISH | Health: PARVO | Sound: 
+I'm an animal! Name: CUTE STUFF | Age: 1 | Weight: 2 | Breed: Catr unknown | Color: YELLOW | Health: GOOD | Sound: PURR
+I'm an animal! Name: REX | Age: 3 | Weight: 5 | Breed: UNKNOWN | Color: BROWN AND WHITE | Health: GOOD | Sound: 
+I'm an animal! Name: SPOT | Age: UNKNOWN | Weight: 8 | Breed: DALMATION | Color: SPOTTED | Health: UNKNOWN | Sound: WOOF
 
 REPORT 3 - CAT REPORT: 
-I'm a cat! My name is MORRIS. I'm 9 years old. I weigh 3 pounds. My breed is UNKNOWN. My color is YELLOW. I'm in GOOD health, and I make a MOAN sound!
-I'm a cat! My name is MITTENS. I'm 1 years old. I weigh 1 pounds. My breed is CALICO. My color is BROWN AND WHITE. I'm in GOOD health, and I make a MEW sound!
-I'm a cat! My name is JUNIOR. I'm 1 years old. I weigh 2 pounds. My breed is TABBY. My color is BLACK. I'm in UNKNOWN health, and I make a  sound!
-I'm a cat! My name is PRISS. I'm UNKNOWN years old. I weigh UNKNOWN pounds. My breed is UNKNOWN. My color is WHITE. I'm in GOOD health, and I make a MEW sound!
-I'm a cat! My name is CHARCOAL. I'm 1 years old. I weigh 2 pounds. My breed is SIAMESE. My color is WHITE AND YELLOW. I'm in GOOD health, and I make a HISS sound!
-I'm a cat! My name is CHARMIN. I'm UNKNOWN years old. I weigh 3 pounds. My breed is UNKNOWN. My color is WHITE. I'm in PARVO health, and I make a  sound!
-I'm a cat! My name is RED. I'm 2 years old. I weigh UNKNOWN pounds. My breed is HEINZ. My color is REDDDISH. I'm in PARVO health, and I make a  sound!
-I'm a cat! My name is CUTE STUFF. I'm 1 years old. I weigh 2 pounds. My breed is UNKNOWN. My color is YELLOW. I'm in GOOD health, and I make a PURR sound!
+I'm a cat! Name: MORRIS | Age: 9 | Weight: 3 | Breed: Catr unknown | Color: YELLOW | Health: GOOD | Sound: MOAN
+I'm a cat! Name: MITTENS | Age: 1 | Weight: 1 | Breed: CALICO | Color: BROWN AND WHITE | Health: GOOD | Sound: MEW
+I'm a cat! Name: JUNIOR | Age: 1 | Weight: 2 | Breed: TABBY | Color: BLACK | Health: UNKNOWN | Sound: 
+I'm a cat! Name: PRISS | Age: UNKNOWN | Weight: UNKNOWN | Breed: Catr unknown | Color: WHITE | Health: GOOD | Sound: MEW
+I'm a cat! Name: CHARCOAL | Age: 1 | Weight: 2 | Breed: SIAMESE | Color: WHITE AND YELLOW | Health: GOOD | Sound: HISS
+I'm a cat! Name: CHARMIN | Age: UNKNOWN | Weight: 3 | Breed: Catr unknown | Color: WHITE | Health: PARVO | Sound: 
+I'm a cat! Name: RED | Age: 2 | Weight: UNKNOWN | Breed: HEINZ | Color: REDDDISH | Health: PARVO | Sound: 
+I'm a cat! Name: CUTE STUFF | Age: 1 | Weight: 2 | Breed: Catr unknown | Color: YELLOW | Health: GOOD | Sound: PURR
 
 REPORT 4 - DOG REPORT: 
-I'm a dog! My name is BITSY. I'm 4 years old. I weigh 6 pounds. My breed is MINX. My color is GREY. I'm in GOOD health, and I make a  sound!
-I'm a dog! My name is FIDO. I'm 5 years old. I weigh 7 pounds. My breed is UNKNOWN. My color is SPOTTED. I'm in GOOD health, and I make a BARK sound!
-I'm a dog! My name is REX. I'm 3 years old. I weigh 5 pounds. My breed is UNKNOWN. My color is BROWN AND WHITE. I'm in GOOD health, and I make a  sound!
-I'm a dog! My name is SPOT. I'm UNKNOWN years old. I weigh 8 pounds. My breed is DALMATION. My color is SPOTTED. I'm in UNKNOWN health, and I make a WOOF sound!
+I'm a dog! Name: BITSY | Age: 4 | Weight: 6 | Breed: MINX | Color: GREY | Health: GOOD | Sound: 
+I'm a dog! Name: FIDO | Age: 5 | Weight: 7 | Breed: UNKNOWN | Color: SPOTTED | Health: GOOD | Sound: BARK
+I'm a dog! Name: REX | Age: 3 | Weight: 5 | Breed: UNKNOWN | Color: BROWN AND WHITE | Health: GOOD | Sound: 
+I'm a dog! Name: SPOT | Age: UNKNOWN | Weight: 8 | Breed: DALMATION | Color: SPOTTED | Health: UNKNOWN | Sound: WOOF
