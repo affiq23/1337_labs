@@ -1,30 +1,30 @@
 REPORT 1 - TOTAL ANIMALS: 14 | TOTAL CATS: 8 | TOTAL DOGS: 4 | OTHER ANIMALS: 2
 
 REPORT 2 - ANIMAL REPORT: 
-I'm an animal! Name: MORRIS | Age: 9 | Weight: 3 | Breed: Catr unknown | Color: YELLOW | Health: GOOD | Sound: MOAN
+I'm an animal! Name: MORRIS | Age: 9 | Weight: 3 | Breed: UNKNOWN | Color: YELLOW | Health: GOOD | Sound: MOAN
 I'm an animal! Name: MITTENS | Age: 1 | Weight: 1 | Breed: CALICO | Color: BROWN AND WHITE | Health: GOOD | Sound: MEW
 I'm an animal! Name: JUNIOR | Age: 1 | Weight: 2 | Breed: TABBY | Color: BLACK | Health: UNKNOWN | Sound: 
-I'm an animal! Name: PRISS | Age: UNKNOWN | Weight: UNKNOWN | Breed: Catr unknown | Color: WHITE | Health: GOOD | Sound: MEW
+I'm an animal! Name: PRISS | Age: UNKNOWN | Weight: UNKNOWN | Breed: UNKNOWN | Color: WHITE | Health: GOOD | Sound: MEW
 I'm an animal! Name: UNKNOWN | Age: UNKNOWN | Weight: UNKNOWN | Breed: MYNAH | Color: BLACK | Health: UNKNOWN | Sound: HELLO
 I'm an animal! Name: CHARCOAL | Age: 1 | Weight: 2 | Breed: SIAMESE | Color: WHITE AND YELLOW | Health: GOOD | Sound: HISS
 I'm an animal! Name: BITSY | Age: 4 | Weight: 6 | Breed: MINX | Color: GREY | Health: GOOD | Sound: 
-I'm an animal! Name: CHARMIN | Age: UNKNOWN | Weight: 3 | Breed: Catr unknown | Color: WHITE | Health: PARVO | Sound: 
+I'm an animal! Name: CHARMIN | Age: UNKNOWN | Weight: 3 | Breed: UNKNOWN | Color: WHITE | Health: PARVO | Sound: 
 I'm an animal! Name: CHIPPY | Age: UNKNOWN | Weight: 1 | Breed: UNKNOWN | Color: TAN | Health: UNKNOWN | Sound: 
 I'm an animal! Name: FIDO | Age: 5 | Weight: 7 | Breed: UNKNOWN | Color: SPOTTED | Health: GOOD | Sound: BARK
 I'm an animal! Name: RED | Age: 2 | Weight: UNKNOWN | Breed: HEINZ | Color: REDDDISH | Health: PARVO | Sound: 
-I'm an animal! Name: CUTE STUFF | Age: 1 | Weight: 2 | Breed: Catr unknown | Color: YELLOW | Health: GOOD | Sound: PURR
+I'm an animal! Name: CUTE STUFF | Age: 1 | Weight: 2 | Breed: UNKNOWN | Color: YELLOW | Health: GOOD | Sound: PURR
 I'm an animal! Name: REX | Age: 3 | Weight: 5 | Breed: UNKNOWN | Color: BROWN AND WHITE | Health: GOOD | Sound: 
 I'm an animal! Name: SPOT | Age: UNKNOWN | Weight: 8 | Breed: DALMATION | Color: SPOTTED | Health: UNKNOWN | Sound: WOOF
 
 REPORT 3 - CAT REPORT: 
-I'm a cat! Name: MORRIS | Age: 9 | Weight: 3 | Breed: Catr unknown | Color: YELLOW | Health: GOOD | Sound: MOAN
+I'm a cat! Name: MORRIS | Age: 9 | Weight: 3 | Breed: UNKNOWN | Color: YELLOW | Health: GOOD | Sound: MOAN
 I'm a cat! Name: MITTENS | Age: 1 | Weight: 1 | Breed: CALICO | Color: BROWN AND WHITE | Health: GOOD | Sound: MEW
 I'm a cat! Name: JUNIOR | Age: 1 | Weight: 2 | Breed: TABBY | Color: BLACK | Health: UNKNOWN | Sound: 
-I'm a cat! Name: PRISS | Age: UNKNOWN | Weight: UNKNOWN | Breed: Catr unknown | Color: WHITE | Health: GOOD | Sound: MEW
+I'm a cat! Name: PRISS | Age: UNKNOWN | Weight: UNKNOWN | Breed: UNKNOWN | Color: WHITE | Health: GOOD | Sound: MEW
 I'm a cat! Name: CHARCOAL | Age: 1 | Weight: 2 | Breed: SIAMESE | Color: WHITE AND YELLOW | Health: GOOD | Sound: HISS
-I'm a cat! Name: CHARMIN | Age: UNKNOWN | Weight: 3 | Breed: Catr unknown | Color: WHITE | Health: PARVO | Sound: 
+I'm a cat! Name: CHARMIN | Age: UNKNOWN | Weight: 3 | Breed: UNKNOWN | Color: WHITE | Health: PARVO | Sound: 
 I'm a cat! Name: RED | Age: 2 | Weight: UNKNOWN | Breed: HEINZ | Color: REDDDISH | Health: PARVO | Sound: 
-I'm a cat! Name: CUTE STUFF | Age: 1 | Weight: 2 | Breed: Catr unknown | Color: YELLOW | Health: GOOD | Sound: PURR
+I'm a cat! Name: CUTE STUFF | Age: 1 | Weight: 2 | Breed: UNKNOWN | Color: YELLOW | Health: GOOD | Sound: PURR
 
 REPORT 4 - DOG REPORT: 
 I'm a dog! Name: BITSY | Age: 4 | Weight: 6 | Breed: MINX | Color: GREY | Health: GOOD | Sound: 
