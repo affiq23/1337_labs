@@ -8,3 +8,4 @@ HW4 - program working with strings and string functions
 HW5 - creating a program to use structs and pointers in order to make an animal guessing game that stores data repeatedly
 HW6 - working with inheritance and classes to make an animal shelter program
 
+git
