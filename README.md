@@ -1,6 +1,7 @@
 # 1337_labs
 labs and homework for Professor DeGroot's class Spring 2023
 =======
+1336_labs - previous homework from fall semester
 
 HW0 - refactoring snake code given in class in order to make code cleaner and easier to read
 
