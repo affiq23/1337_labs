@@ -20,3 +20,18 @@ public:
     ~Animal(); // destructor
 };
 #endif
+
+Employee* empPtr;
+int x;
+cin >> x;
+
+if(x > 10){
+    empPtr = newEmployee;
+    Employee e1, e2, e3;
+    Employee e4 = e1;
+    Employee* ePtr = new Employee[10];
+    printWage(e1);
+}
+
+delete empPtr;
+cout << "exiting";

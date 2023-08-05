@@ -31,8 +31,8 @@ CHANGELOG:
 using namespace std;
 bool gameOver;
 bool ranIntoTail = false;
-const int width = 20;
-const int height = 20;
+const int width = 50;
+const int height = 50;
 int snakeHeadXPos, snakeHeadYPos, fruitXPos, fruitYPos, score;
 int tailXPos[100], tailYPos[100];
 int tailLength;

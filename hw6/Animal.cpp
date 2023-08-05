@@ -14,7 +14,7 @@ Animal::Animal()
     sound = "UNKNOWN";
 }
 
-string Animal::introduction()
+ string Animal::introduction()
 { // returns member variables in string as introduction method
 
     return "I'm an animal! Name: " + name + " | Age: " + age + " | Weight: " + weight + " | Breed: " + breed + " | Color: " + color + " | Health: " + health + " | Sound: " + sound;

@@ -169,6 +169,7 @@ void printToConsole()
     {
         cout << dogs[i]->Dog::introduction() << endl; // same for Dog specific method
     }
+
 }
 
 // exact same process as printToConsole method, just printing to text file

@@ -1,0 +1,30 @@
+Total Animals created:14,Total cats created:8,Total dogs created:4
+Animals
+Name: Morris, Age: 9, Weight: 3, Breed: UNKNOWN, Color: yellow, Health: good, Sound: Moan
+Name: Mittens, Age: 1, Weight: 1, Breed: Calico, Color: brown and white, Health: good, Sound: Mew
+Name: Junior, Age: 1, Weight: 2, Breed: Tabby, Color: black, Health: UNKNOWN, Sound: 
+Name: Priss, Age: UNKNOWN, Weight: UNKNOWN, Breed: UNKNOWN, Color: white, Health: good, Sound: Mew
+Name: UNKNOWN, Age: UNKNOWN, Weight: UNKNOWN, Breed: Mynah, Color: black, Health: UNKNOWN, Sound: Hello
+Name: Charcoal, Age: 1, Weight: 2, Breed: Siamese, Color: white and yellow, Health: good, Sound: Hiss
+Name: Bitsy, Age: 4, Weight: 6, Breed: Minx, Color: grey, Health: good, Sound: 
+Name: Charmin, Age: UNKNOWN, Weight: 3, Breed: UNKNOWN, Color: white, Health: parvo, Sound: 
+Name: Chippy, Age: UNKNOWN, Weight: 1, Breed: UNKNOWN, Color: tan, Health: UNKNOWN, Sound: 
+Name: Fido, Age: 5, Weight: 7, Breed: UNKNOWN, Color: spotted, Health: good, Sound: Bark
+Name: Red, Age: 2, Weight: UNKNOWN, Breed: Heinz, Color: redddish, Health: parvo, Sound: 
+Name: Cute Stuff, Age: 1, Weight: 2, Breed: UNKNOWN, Color: yellow, Health: good, Sound: Purr
+Name: Rex, Age: 3, Weight: 5, Breed: UNKNOWN, Color: brown and white, Health: good, Sound: 
+Name: Spot, Age: UNKNOWN, Weight: 8, Breed: Dalmation, Color: spotted, Health: UNKNOWN, Sound: Woof
+Cats
+Name:Morris,Age:9,Weight:3,Breed:UNKNOWN,Color:yellow,Health:good,Sound:Moan
+Name:Mittens,Age:1,Weight:1,Breed:Calico,Color:brown and white,Health:good,Sound:Mew
+Name:Junior,Age:1,Weight:2,Breed:Tabby,Color:black,Health:UNKNOWN,Sound:
+Name:Priss,Age:UNKNOWN,Weight:UNKNOWN,Breed:UNKNOWN,Color:white,Health:good,Sound:Mew
+Name:Charcoal,Age:1,Weight:2,Breed:Siamese,Color:white and yellow,Health:good,Sound:Hiss
+Name:Charmin,Age:UNKNOWN,Weight:3,Breed:UNKNOWN,Color:white,Health:parvo,Sound:
+Name:Red,Age:2,Weight:UNKNOWN,Breed:Heinz,Color:redddish,Health:parvo,Sound:
+Name:Cute Stuff,Age:1,Weight:2,Breed:UNKNOWN,Color:yellow,Health:good,Sound:Purr
+Dogs
+Name:Bitsy,Age:4,Weight:6,Breed:Minx,Color:grey,Health:good,Sound:
+Name:Fido,Age:5,Weight:7,Breed:UNKNOWN,Color:spotted,Health:good,Sound:Bark
+Name:Rex,Age:3,Weight:5,Breed:UNKNOWN,Color:brown and white,Health:good,Sound:
+Name:Spot,Age:UNKNOWN,Weight:8,Breed:Dalmation,Color:spotted,Health:UNKNOWN,Sound:Woof

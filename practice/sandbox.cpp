@@ -59,19 +59,18 @@ void summingRows(bool ifTrue)
     }
 }
 
-
-
 int main()
 {
 
+    // messingWith2DArray(false);
+    // summingRows(false);
 
-    //messingWith2DArray(false);
-    //summingRows(false);
+   
+int a1[] = {1, 2, 3, 4, 5}; int *b1;
+b1 = a1;
+b1[0] = 21;
+cout << a1[0];
 
-    int x = 10;
-    if(x = 5){
-        x++;
-    }
-    cout << x << endl;
+
     return 0;
 }

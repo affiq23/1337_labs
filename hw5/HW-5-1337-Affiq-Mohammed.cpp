@@ -25,9 +25,11 @@
 
 #include <iostream>
 #include <string>
+#include <fstream>
 using namespace std;
 
 bool check = false; 
+string animalFileName_SAVE = " myAnimalTreeDB.txt ";
 
 // debug statement to fix my bugs
 void debug(string msg, bool check)
@@ -51,6 +53,7 @@ struct animalNode
 
 void playGame(animalNode *curNode) // passes in root node as current node first time playing
 {
+    ofstream outfile (animalFileName_SAVE);
 
     debug("called playGame", check);
     // if curNode contains a guess, ask the user if it's correct
@@ -159,6 +162,20 @@ void playGame(animalNode *curNode) // passes in root node as current node first 
         }
     }
 }
+
+// printTheTree - print the tree to the output stream in pre-order manner
+void printTheTree (ostream &outputStream, animalNode *currentNode) {
+//see if this node is a guess node
+if ((currentNode->yesAnswer) == nullptr) { // it is, so it’s a leaf node
+outputStream << "G" << endl;
+outputStream << currentNode->guess << endl;
+} else { // no, it’s a question node; print it and then traverse the children
+outputStream << "Q" << endl;
+outputStream << currentNode->question << endl;
+printTheTree(outputStream, currentNode->yesAnswer);
+printTheTree(outputStream, currentNode->noAnswer);
+}
+} //printTheTree
 
 int main()
 {
